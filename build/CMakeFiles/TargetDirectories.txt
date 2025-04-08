@@ -1,0 +1,3 @@
+/Users/bobdresner/Desktop/C++/CircleGame/build/CMakeFiles/MyProject.dir
+/Users/bobdresner/Desktop/C++/CircleGame/build/CMakeFiles/edit_cache.dir
+/Users/bobdresner/Desktop/C++/CircleGame/build/CMakeFiles/rebuild_cache.dir
