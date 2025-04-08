@@ -14,8 +14,6 @@ public:
 
     void updatePosition(double x, double y, uint64_t tick);
 
-    void drawEntity(SDL_Renderer* renderer);
-
     inline double getX() { return mx; };
     inline double getY() { return my; };
 };

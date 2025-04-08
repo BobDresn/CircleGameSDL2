@@ -1,19 +1,17 @@
 #pragma once
+#include "utilities.h"
 #include "entity.h"
 
 Entity::Entity(double x, double y) : mx(x), my(y) {}
 
-void Entity::drawEntity(SDL_Renderer* renderer) {
-   int mx = this->getX();
-   int my = this->getY();
+void Entity::drawCircle(SDL_Renderer* renderer, int mx, int my, uint8_t r, uint8_t g, uint8_t b, uint8_t a) {
    const int32_t diameter = RADIUS * 2;
-
    int32_t x = RADIUS - 1;
    int32_t y = 0;
    int32_t tx = 1;
    int32_t ty = 1;
-   int32_t error = (tx - diameter);
-   SDL_SetRenderDrawColor(renderer, 255, 0, 255, 255);
+   int32_t error = tx - diameter;
+   SDL_SetRenderDrawColor(renderer, r, g, b, a);
 
    while (x >= y)
    {
